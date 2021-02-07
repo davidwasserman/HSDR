@@ -6,8 +6,8 @@
 /***********************************************************
  Page: List of Animals
 ************************************************************/
-a{
-	color: #0BACDC;
+.list-body {
+	background-color: white	
 }
 
 .list-table {}
@@ -18,18 +18,11 @@ a{
 	vertical-align: top;	
 }
 
-.list-animal-photo-block {
-
-}
-
-
+.list-animal-photo-block {}
 
 .list-animal-photo {
-    -moz-border-radius: 15px;
-	border-radius: 10px;
-	border-color: #0BACDC;
-	border: 3px solid;
-	padding: 3px;
+    border-style: none;
+    border-width: 0;
     height: 100px
 }
 
@@ -44,14 +37,15 @@ a{
 }
 
 .list-animal-id {
-	font-family:  Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Verdana", "Helvetica", "Arial", sans-serif;
 	font-size: 70%;
 	line-height: 125%;
 	color: #666666;
 }
 
 .list-animal-name {
-	font-family:  Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+	color: #666666;
 	font-size: 90%;
 	font-weight: bold;
 	margin-bottom: 3px;
@@ -60,25 +54,13 @@ a{
 	margin-top: 0px;
 }
 
-.list-animal-name a{
-	color: #0BACDC;
-}
-
-.list-animal-sexSN, .list-animal-breed, .list-animal-age, .list-animal-detail, .list-animal-breed, .list-animal-foundype
+.list-animal-sexSN, .list-animal-breed, .list-animal-age, .list-animal-detail, .list-animal-breed, .list-animal-foundtype
 {
 	margin-top: 3px;
 	margin-bottom: 3px;
-	font-family:  Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Verdana", "Helvetica", "Arial", sans-serif;
 	font-size: 70%;	
 	color: #666666;
-}
-
-.notfound{
-	font-family:  Verdana, Helvetica, Arial, sans-serif;
-	font-size: 90%;
-	font-weight: bold;
-	text-align: center;
-	padding-left: 30px;
 }
 
 /***********************************************************
@@ -86,7 +68,8 @@ a{
 ************************************************************/
 
 .detail-body {
-	font-family:  Verdana, Helvetica, Arial, sans-serif;
+	background-color: white;
+	font-family: "Verdana", "Helvetica", "Arial", sans-serif;
 }
 
 .detail-link {
@@ -98,22 +81,25 @@ a{
 }
 	
 .detail-table {
-    border-style: solid;
-    border-color: #BBBBBB;
-    border-width: 0px;
-    border-bottom-width: 1px;
-    border-right-width: 1px;
-	font-family:  Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Verdana", "Helvetica", "Arial", sans-serif;
 	font-size: 70%;
 	margin-bottom: 6px;
 	margin-left: 3px;
 	margin-right: 0px;
-	margin-top: 0px;    
+	margin-top: 0px;  
+    border: 0px solid transparent !important;  
+}
+
+.detail-table tr:nth-child(odd) {
+   background-color: #ebebeb;
+}
+.detail-table td {
+    padding: 3px 5px;
 }
 
 .detail-label {
 	height: 18px;
-    border-style: solid;
+    border-style: none;
     border-top-width: 1px;
     border-left-width: 1px;
     border-bottom-width: 0px;
@@ -125,7 +111,7 @@ a{
 }
 
 .detail-value {	
-    border-style: solid;
+    border-style: none;
     border-top-width: 1px;
     border-left-width: 1px;
     border-bottom-width: 0px;
@@ -143,14 +129,15 @@ a{
 }
 
 .detail-animal-name {
-	font-family:  Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Verdana", "Helvetica", "Arial", sans-serif;
 	font-size: large;
 	font-weight: bold;
-	color: #666666;
+	color: #0191f9;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom:3px; 
-	margin-left:3px
+	margin-left:3px;
+    padding-bottom: 10px;
 }
 
 .detail-animal-photo {
@@ -158,8 +145,146 @@ a{
 }
 
 .detail-animal-desc {
-	font-family:  Verdana, Helvetica, Arial, sans-serif;
-	font-size: 70%;
+	font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
 	line-height: 150%;
-	margin-bottom: 8px;
+	margin: 10px 0px;
+}
+
+.detSize 
+{
+    visibility:hidden;
+    height: 0px;
+}
+
+.button{
+	border:0px;
+	display:block;
+	width:104px;
+	height:17px;
+	padding-top:1px;
+	background:#f68428 url(../images/bg-button_104x18.png) no-repeat top left;
+	
+	font-family:arial;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+	color:white;
+}
+button.button{
+	padding-top:0px;
+	height:18px;
+}
+a.button:hover {
+	color:white;
+	text-decoration: underline;
+}
+.button.green{
+	background-color:#a9b93c;
+}	
+.button.orange{
+	background-color:#f68428;
+}	
+.button.blue{
+	background-color:#37bcdf;
+}	
+.button.brown{
+	background-color:#663700;
+}
+.navHeaderText
+{
+    font-family:arial;
+	font-size:12px;
+}
+.hidden { display: none; }
+.addthis_inline_share_toolbox{
+    display: inline-block;
+    margin-top: 25px;
+}
+@media only screen and (min-width: 992px){
+    .print_btn{
+        display: inline-block;
+        width: 67px;
+        height: 26px;
+        position: relative;
+        top: -5px;
+        background: url(../images/printbutton.gif) no-repeat top left;
+    }
+}
+@media only screen and (max-width: 991px){
+    .print_btn{
+        display: inline-block;
+        width: 67px;
+        height: 26px;
+        position: relative;
+        top: -5px;
+        background: url(../images/printbuttonsmall.gif) no-repeat top left;
+    }
+}
+.print_btn_container{
+    position: relative;
+}
+.top-bar {
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0px 0px 5px 0px;
+}
+
+.btn-orange, .btn-orange:visited {
+    background: #ed6a00;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+.btn-orange:hover {
+    background: #ccc;
+    color: #333;
+}
+#AdoptionApplicationButtonRow {
+    background: white;
+}
+.text-center {
+    text-align: center !important;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+    color: #333;
+    text-decoration: none;
 }
