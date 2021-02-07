@@ -27,7 +27,7 @@ a{
 .list-animal-photo {
     -moz-border-radius: 15px;
 	border-radius: 10px;
-	border-color: #0BACDC;
+	border-color: #f2821f;
 	border: 3px solid;
 	padding: 3px;
     height: 100px
@@ -61,7 +61,7 @@ a{
 }
 
 .list-animal-name a{
-	color: #0BACDC;
+	color: #785bba;
 }
 
 .list-animal-sexSN, .list-animal-breed, .list-animal-age, .list-animal-detail, .list-animal-breed, .list-animal-foundype
